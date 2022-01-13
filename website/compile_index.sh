@@ -42,7 +42,7 @@ echo -e "\n\n" >> index.md
 for notebook in $OUTPUT_PATH/*.html
 
 do
-  echo "[$notebook](https://pages.peakbreaker.com/present-myself-site/$notebook)" | tee -a index.md
+  echo "[$notebook](https://bjor2791.github.io/data-science-template/$notebook)" | tee -a index.md
   echo -e "\n" >> index.md
 done
 
