@@ -30,10 +30,7 @@ mkdir -p $OUTPUT_PATH
 rm $OUTPUT_PATH/*.html
 
 cd $JUPYTER_FOLDER
-wget "https://raw.githubusercontent.com/alexdiem/data-science-python/main/L1_intro_python_data_analysis.ipynb"
-wget "https://raw.githubusercontent.com/alexdiem/data-science-python/main/L2_plotting.ipynb"
-wget "https://raw.githubusercontent.com/alexdiem/data-science-python/main/L3_geopandas.ipynb"
-wget "https://raw.githubusercontent.com/alexdiem/data-science-python/main/L4_time_series.ipynb"
+wget "https://raw.githubusercontent.com/bjor2791/data-science-template/main/notebooks/E6_oslo_mogreina.ipynb"
 
 cd ..
 
