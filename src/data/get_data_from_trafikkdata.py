@@ -19,7 +19,7 @@ transport = RequestsHTTPTransport(
 client = Client(transport=transport, fetch_schema_from_transport=True)
 
 filedir = './data'
-filename = filedir + '/' + 'trafikkdata_hourly_TRAFFICSTATION.csv'
+filename = filedir + '/' + 'trafikkdata_hourly_TRAFFICSTATION_2020.csv'
 
 filepath = Path(filedir)
 filepath.mkdir(parents=True, exist_ok=True)
@@ -28,7 +28,7 @@ queryByHour = """
 {
   trafficData(trafficRegistrationPointId: "TRAFFICSTATION") {
     volume {
-      byHour(from: "2019-01-01T00:00:01.000Z", to: "2019-12-31T23:59:59.999Z", after:"PAGINATION") {
+      byHour(from: "2020-01-01T00:00:01.000Z", to: "2020-12-31T23:59:59.999Z", after:"PAGINATION") {
         edges {
           node {
             to
